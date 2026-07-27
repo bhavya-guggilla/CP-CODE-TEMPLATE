@@ -94,6 +94,45 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DS
 | `nextGreater(a)`      | Next Greater Element values     |
 | `nextGreaterIndex(a)` | Next Greater Element indices    |
 
+
+## Bit — Bit Manipulation Utilities
+
+A collection of static helper methods for common bitwise operations on `long` values.
+
+### Usage
+
+\`\`\`java
+long n = 42L;
+Bit.get(n, 3);              // read bit at index 3
+Bit.set(n, 0);               // set bit 0
+Bit.clear(n, 1);             // clear bit 1
+Bit.toggle(n, 2);            // flip bit 2
+Bit.isSet(n, 3);             // true/false
+\`\`\`
+
+### API Reference
+
+| Method      | Description |
+| `get(n, i)` | Returns the value (0 or 1) of bit `i` in `n`. |
+| `set(n, i)` | Returns `n` with bit `i` set to 1. |
+| `clear(n, i)` | Returns `n` with bit `i` cleared to 0. |
+| `toggle(n, i)` | Returns `n` with bit `i` flipped. |
+| `isSet(n, i)` | Returns `true` if bit `i` is set. |
+| `countSetBits(n)` | Returns the number of set bits (popcount) in `n`. |
+| `isPowerOfTwo(n)` | Returns `true` if `n` is a positive power of two. |
+| `clearLowestSetBit(n)` | Returns `n` with its lowest set bit cleared. |
+| `lowestSetBit(n)` | Returns a value with only the lowest set bit of `n` retained. |
+| `lowestSetBitIndex(n)` | Returns the index of the lowest set bit, or `-1` if `n == 0`. |
+| `highestSetBitIndex(n)` | Returns the index of the highest set bit, or `-1` if `n == 0`. |
+| `bitLength(n)` | Returns the number of bits needed to represent `n` (position of highest set bit + 1). |
+| `subsets(mask)` | Returns all bitmask subsets of `mask`, including `0` and `mask` itself, using the classic submask enumeration trick.|
+| `xorSwap(a, b)` | Swaps two ints without a temporary variable using XOR, returned as `{a, b}`.|
+
+### Notes
+
+- All bit indices are 0-based, counting from the least significant bit.
+- `subsets(mask)` runs in `O(3^popcount(mask))` total across all masks combined — the standard complexity for submask enumeration — making it efficient for subset DP problems.
+
 ---
 
 ### `Grd` — Grid Algorithms
