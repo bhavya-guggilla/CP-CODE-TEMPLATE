@@ -154,7 +154,7 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DS
 
 ```java
 
-
+'''
 ---
 
 ### `Gen` — Test Case Generator
