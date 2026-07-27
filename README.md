@@ -154,9 +154,30 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, gr
 | `grid(label,grid)` | Print a 2D character grid             |
 | `msg(text)`        | Print a custom debug message           |
 
----
 
 ## Debug Mode
 
 ```java
 public static final boolean DEBUG = true;
+
+
+## Quick Example
+
+int[] a = IO.iArr(n);
+
+// gcd of all elements in a with b
+long g = b;
+for (int val : a) {
+    g = Mth.gcd(g, val);
+}
+
+int pos = Arr.lb(sortedArray, x);
+
+DSU dsu = new DSU(n);
+dsu.union(u, v);
+
+// modular multiplication
+long ans = Mod.mul(x, y);
+
+
+---
