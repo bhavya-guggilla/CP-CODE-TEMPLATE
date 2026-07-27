@@ -2,7 +2,7 @@
 
 A single-file Java template packed with commonly used algorithms, data structures, and helper utilities — built to save setup time and reduce boilerplate during contests.
 
-Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, graph algorithms, segment tree, DSU, grid traversal, a random test-case generator, and a built-in debug logger you can toggle on/off.
+Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DSU, grid traversal, a random test-case generator, and a built-in debug logger you can toggle on/off.
 
 ---
 
@@ -155,29 +155,19 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, gr
 | `msg(text)`        | Print a custom debug message           |
 
 
-## Debug Mode
-
-```java
+// Debug Mode flag
 public static final boolean DEBUG = true;
 
-
-## Quick Example
+// --------------------
+// Quick Example (separate)
+// --------------------
 
 int[] a = IO.iArr(n);
-
-// gcd of all elements in a with b
 long g = b;
 for (int val : a) {
     g = Mth.gcd(g, val);
 }
-
 int pos = Arr.lb(sortedArray, x);
-
 DSU dsu = new DSU(n);
 dsu.union(u, v);
-
-// modular multiplication
 long ans = Mod.mul(x, y);
-
-
----
