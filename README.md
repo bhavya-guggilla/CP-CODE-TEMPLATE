@@ -2,7 +2,7 @@
 
 A single-file Java template packed with commonly used algorithms, data structures, and helper utilities — built to save setup time and reduce boilerplate during contests.
 
-Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DSU, grid traversal, a random test-case generator, and a built-in debug logger you can toggle on/off.
+Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DSU, Bit Manipulation, grid traversal, a random test-case generator, and a built-in debug logger you can toggle on/off.
 
 ---
 
