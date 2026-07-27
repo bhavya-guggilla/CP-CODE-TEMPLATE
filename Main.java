@@ -198,6 +198,33 @@ public class Main {
         }
     }
 
+    // ================= Bit : Bit manipulation utilities =================
+static class Bit {
+    static int get(long n, int i) { return (int) ((n >> i) & 1); }
+    static long set(long n, int i) { return n | (1L << i); }
+    static long clear(long n, int i) { return n & ~(1L << i); }
+    static long toggle(long n, int i) { return n ^ (1L << i); }
+    static boolean isSet(long n, int i) { return get(n, i) == 1; }
+    static int countSetBits(long n) { return Long.bitCount(n); }
+    static boolean isPowerOfTwo(long n) { return n > 0 && (n & (n - 1)) == 0; }
+    static long clearLowestSetBit(long n) { return n & (n - 1); }
+    static long lowestSetBit(long n) { return n & (-n); }
+    static int lowestSetBitIndex(long n) { return n == 0 ? -1 : Long.numberOfTrailingZeros(n); }
+    static int highestSetBitIndex(long n) { return n == 0 ? -1 : 63 - Long.numberOfLeadingZeros(n); }
+    static int bitLength(long n) { return 64 - Long.numberOfLeadingZeros(n); }
+    static List<Long> subsets(long mask) {
+        List<Long> res = new ArrayList<>();
+        long sub = mask;
+        while (true) {
+            res.add(sub);
+            if (sub == 0) break;
+            sub = (sub - 1) & mask;
+        }
+        return res;
+    }
+    static int[] xorSwap(int a, int b) { a ^= b; b ^= a; a ^= b; return new int[]{a, b}; }
+}
+
     // ================= Grd : Grid traversal =================
     static class Grd {
         static final int[] DR = {-1, 1, 0, 0};
