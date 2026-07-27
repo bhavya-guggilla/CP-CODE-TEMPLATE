@@ -155,19 +155,24 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DS
 | `msg(text)`        | Print a custom debug message           |
 
 
-// Debug Mode flag
+### Debug Mode
+
+```java
 public static final boolean DEBUG = true;
+```
 
-// --------------------
-// Quick Example (separate)
-// --------------------
+---
 
+### Quick Example
+
+```java
 int[] a = IO.iArr(n);
 long g = b;
 for (int val : a) {
     g = Mth.gcd(g, val);
 }
-int pos = Arr.lb(sortedArray, x);
+int pos = Arr.lowerBound(sortedArray, x);
 DSU dsu = new DSU(n);
 dsu.union(u, v);
 long ans = Mod.mul(x, y);
+```
