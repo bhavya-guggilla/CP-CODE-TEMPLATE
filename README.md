@@ -121,29 +121,6 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, gr
 | `connected(a,b)`   | Check if two nodes belong to the same set      |
 
 ---
-
-### `ST` — Segment Tree
-
-**Purpose:** Efficient range query and point update operations.
-
-| Function          | Purpose                           |
-| --------------    | --------------------------------- |
-| `update(idx,val)` | Update value at an index          |
-| `query(l,r)`      | Query range sum over `[l, r]`     |
-
----
-
-### `Graph` — Adjacency List & Dijkstra
-
-**Purpose:** Weighted graph representation and shortest paths.
-
-| Function                    | Purpose                                        |
-| ----------------------------| --------------------------------------------- |
-| `addEdge(u,v,w,directed)`   | Add a weighted edge (directed or undirected)   |
-| `dijkstra(src)`             | Shortest distances from `src` to all nodes     |
-
----
-
 ### `Pair<A, B>` — Generic Pair
 
 **Purpose:** Bundle two values together, useful for sorting and priority queues.
