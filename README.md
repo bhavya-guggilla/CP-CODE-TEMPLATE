@@ -15,8 +15,6 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, gr
 - Monotonic stack — next greater element (values & indices)
 - Grid traversal — bounds check, DFS, BFS
 - Disjoint Set Union (Union-Find) with path compression
-- Segment Tree — range sum query, point update
-- Graph — adjacency list + Dijkstra's shortest path
 - Generic `Pair<A, B>` class
 - Random & edge-case test data generator
 - Debug logger, silenced by a single `DEBUG` flag
