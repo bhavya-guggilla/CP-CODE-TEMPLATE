@@ -153,7 +153,10 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DS
 | `xorSwap(a,b)`          | Swap two ints without a temp variable using XOR                |
 
 ```java
-'''
+```
+
+---
+
 ### `Gen` — Test Case Generator
 
 **Purpose:** Generate random and edge-case test data.
@@ -167,7 +170,6 @@ Includes fast I/O, modular arithmetic, number theory, array/prefix utilities, DS
 | `str(len)`             | Generate random lowercase string     |
 
 ---
-
 ### `DBG` — Debug Utilities
 
 **Purpose:** Print debugging information during development.
